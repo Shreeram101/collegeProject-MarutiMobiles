@@ -1,0 +1,194 @@
+/* =========================================
+   CRYSTAL WHITE & OCEAN BLUE (LIGHT THEME)
+========================================= */
+
+.light-theme-wrapper {
+  background-color: #ffffff;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  color: #1e293b;
+}
+
+.hero-light-bg {
+  background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+  position: relative;
+}
+
+.hero-glow-blue {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  top: 40%;
+  right: 10%;
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Gradient Texts & Badges */
+.text-gradient-blue {
+  background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.badge-light-blue {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+/* Modern Buttons */
+.btn-blue-gradient {
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  color: white;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-blue-gradient:hover {
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+  transform: translateY(-3px);
+  color: white;
+}
+
+.btn-outline-glass {
+  border: 2px solid #e2e8f0;
+  color: #475569;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-glass:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+
+/* Floating Animation for Phone (Light) */
+@keyframes floatPhoneLight {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating-phone-light {
+  animation: floatPhoneLight 5s ease-in-out infinite;
+}
+
+.phone-glow-behind-light {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  background: rgba(186, 230, 253, 0.5);
+  filter: blur(50px);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Categories & Features Cards */
+.features-light-bg {
+  background: #f8fafc;
+}
+
+.category-card-light {
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.category-card-light:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: #e2e8f0;
+}
+
+.cat-icon-box {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+.bg-soft-blue { background: #eff6ff; }
+.bg-soft-purple { background: #faf5ff; }
+.text-purple { color: #9333ea; }
+.bg-soft-orange { background: #fff7ed; }
+.text-orange { color: #ea580c; }
+
+/* Glassmorphism Feature Cards (Light) */
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-light:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(14, 165, 233, 0.08);
+}
+
+.icon-glow-box-light {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f9ff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.glass-card-light:hover .icon-glow-box-light {
+  background: #e0f2fe;
+  transform: scale(1.1);
+}
+
+/* Product Cards */
+.product-card-light {
+  background: white;
+  transition: all 0.3s ease;
+  border-color: #f1f5f9 !important;
+}
+
+.product-card-light:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  border-color: #e2e8f0 !important;
+  transform: translateY(-3px);
+}
+
+/* Footer & Inputs */
+.footer-link-light {
+  transition: all 0.2s;
+}
+
+.footer-link-light:hover {
+  color: #0ea5e9 !important;
+  padding-left: 5px;
+}
+
+.hover-primary:hover {
+  background-color: #0ea5e9 !important;
+  color: white !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

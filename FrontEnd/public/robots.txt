@@ -1,0 +1,71 @@
+                      <nav className="navbar bg-body-tertiary py-3">
+                            <div className="container-fluid d-flex justify-content-between">
+                                <form className="d-flex" role="search">
+                                    <input className="form-control rounded-pill" style={{ width: '370px' }} type="search" placeholder="Search" aria-label="Search" />
+                                </form>
+                                <div className='d-flex'>
+                                    <a href="" className='dropdown dropstart'>
+                                        <img src={profile} alt="" width={37} className='rounded-circle dropdown-toggle' data-bs-toggle="dropdown" aria-expanded="false" />
+                                        <ul className="dropdown-menu">
+                                            <li><a className="dropdown-item" href="#">My Ptofile</a></li>
+                                            <li><a className="dropdown-item" href="#">My Orders</a></li>
+                                            <li><a className="dropdown-item" href="#">Sign Out</a></li>
+                                        </ul>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+
+
+
+
+
+
+
+
+
+
+
+                        <div className="container-fluid">
+                <div className="row">
+                    <div className="col-lg-2 col-sm-2 col-md-2 bg-body-tertiary">
+                        <div>
+                            <img src={logo} alt="" width={120} className='ms-4' />
+                        </div>
+                        <div className='mx-4 px-3'>
+                            <p className=' text-secondary fw-bold'>HOMEPAGE</p> 
+                            <p className=''></p> 
+                        </div>
+                    </div>
+
+
+                    <div className="col-lg-10 col-md">
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+                            <div className='container-fluid d-flex justify-content-between'>
+                                <form className="d-flex" role="search">
+                                    <input className="form-control rounded-pill" style={{ width: '370px' }} type="search" placeholder="Search" aria-label="Search" />
+                                </form>
+                                <div className='d-flex'>
+                                    <span><i className="fa-solid fa-cart-shopping fs-4 text-dark-emphasis me-2 mt-2 px-2"></i></span>
+                                    <div className="dropdown dropstart">
+                                        <a className=' dropdown-toggle-split' href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src={profile} alt="" width={37} className='rounded-circle dropdown-toggle' data-bs-toggle="dropdown" aria-expanded="false" />
+                                            <ul className="dropdown-menu text-dark">
+                                                <li><a className="dropdown-item" href="#">My Ptofile</a></li>
+                                                <li><a className="dropdown-item" href="#">My Orders</a></li>
+                                                <li><a className="dropdown-item" href="#">Sign Out</a></li>
+                                            </ul>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+
+                    </div>
+
+                </div>
+            </div>
