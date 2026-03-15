@@ -65,7 +65,7 @@ const AdminOrders = () => {
                                             ))}
                                         </div>
                                     </td>
-                                    <td className="fw-bold text-primary">${order.subtotal}</td>
+                                    <td className="fw-bold text-primary">₹{order.subtotal}</td>
                                     <td className="small text-secondary" style={{ maxWidth: '200px' }}>
                                         <div className="fw-bold text-dark">{order.selectedAddress.fullname}</div>
                                         {order.selectedAddress.streetaddress}, {order.selectedAddress.city}

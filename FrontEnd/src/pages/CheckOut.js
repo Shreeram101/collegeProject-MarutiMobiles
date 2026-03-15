@@ -182,7 +182,7 @@ const CheckOut = () => {
                                                     <h6 className="fw-bold mb-1 text-truncate" style={{ maxWidth: '200px' }}>{item.product.title}</h6>
                                                     <div className="d-flex justify-content-between align-items-center">
                                                         <small className="text-secondary">Qty: {item.qty}</small>
-                                                        <span className="fw-semibold">${item.product.price}</span>
+                                                        <span className="fw-semibold">₹{item.product.price}</span>
                                                     </div>
                                                     <button onClick={() => handleRemove(item.id)} className="btn btn-link btn-sm text-danger p-0 text-decoration-none small mt-1">Remove</button>
                                                 </div>
@@ -192,7 +192,7 @@ const CheckOut = () => {
                                     <div className="bg-light p-4">
                                         <div className="d-flex justify-content-between mb-2">
                                             <span className="text-secondary">Subtotal</span>
-                                            <span className="fw-semibold">${subtotal}</span>
+                                            <span className="fw-semibold">₹{subtotal}</span>
                                         </div>
                                         <div className="d-flex justify-content-between mb-3">
                                             <span className="text-secondary">Shipping</span>
@@ -201,7 +201,7 @@ const CheckOut = () => {
                                         <hr />
                                         <div className="d-flex justify-content-between mb-4">
                                             <span className="fs-5 fw-bold">Total</span>
-                                            <span className="fs-4 fw-bold text-primary">${subtotal}</span>
+                                            <span className="fs-4 fw-bold text-primary">₹{subtotal}</span>
                                         </div>
                                         <button
                                             onClick={handleOrder}

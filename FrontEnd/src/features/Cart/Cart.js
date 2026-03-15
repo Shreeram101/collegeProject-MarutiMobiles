@@ -57,7 +57,7 @@ const Cart = () => {
 
                                             {/* Qty & Price */}
                                             <div className="col-md-4 d-flex flex-column align-items-end justify-content-between h-100">
-                                                <h5 className="fw-bold text-primary mb-3">${item.product.price}</h5>
+                                                <h5 className="fw-bold text-primary mb-3">₹{item.product.price}</h5>
 
                                                 <div className="d-flex align-items-center gap-3">
                                                     <div className="quantity-wrapper bg-light px-2 py-1 rounded">
@@ -92,14 +92,14 @@ const Cart = () => {
                                 </div>
                                 <div className="d-flex justify-content-between mb-4">
                                     <span className="text-secondary">Subtotal</span>
-                                    <span className="fw-bold fs-5">${subtotal}</span>
+                                    <span className="fw-bold fs-5">₹{subtotal}</span>
                                 </div>
 
                                 <hr className="my-4 text-muted" />
 
                                 <div className="d-flex justify-content-between mb-4">
                                     <span className="fw-bold fs-5">Total</span>
-                                    <span className="fw-bold fs-4 text-primary">${subtotal}</span>
+                                    <span className="fw-bold fs-4 text-primary">₹{subtotal}</span>
                                 </div>
 
                                 <div className="d-grid gap-3">

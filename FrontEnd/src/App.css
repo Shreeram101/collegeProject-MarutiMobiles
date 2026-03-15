@@ -192,3 +192,108 @@
 .cursor-pointer {
   cursor: pointer;
 }
+
+
+/* =========================================
+   PRODUCT DETAIL PAGE CUSTOM CSS
+========================================= */
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Color Options UI */
+.color-option {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+}
+
+.color-option.selected {
+  border: 3px solid #1e293b; /* Dark border to show selection */
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Quantity Selector UI */
+.quantity-wrapper {
+  display: inline-flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 50px;
+  padding: 4px;
+}
+
+.quantity-btn-modern {
+  background: #f1f5f9;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #475569;
+}
+
+.quantity-btn-modern:hover {
+  background: #e2e8f0;
+  color: #0ea5e9;
+}
+
+.quantity-input-modern {
+  width: 50px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #1e293b;
+  outline: none;
+}
+/* Chrome, Safari, Edge, Opera - hide arrows from number input */
+.quantity-input-modern::-webkit-outer-spin-button,
+.quantity-input-modern::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Custom Add To Cart Button */
+.btn-primary-custom {
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+  transform: translateY(-3px);
+  color: white;
+}

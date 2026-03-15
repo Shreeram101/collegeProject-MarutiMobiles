@@ -109,7 +109,7 @@ const ProductDetail = () => {
                                 </div>
 
                                 <h3 className='display-6 fw-bold text-primary mb-4'>
-                                    ${selectedproduct.price}
+                                    ₹{selectedproduct.price}
                                 </h3>
 
                                 <p className='text-secondary lead mb-5' style={{ fontSize: '1rem', lineHeight: '1.7' }}>

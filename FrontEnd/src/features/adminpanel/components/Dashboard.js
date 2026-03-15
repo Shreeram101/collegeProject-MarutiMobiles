@@ -251,7 +251,7 @@ const Dashboard = () => {
                                 <h6 className="card-title mb-0 opacity-75">Total Revenue</h6>
                                 <i className="fa-solid fa-wallet fs-4"></i>
                             </div>
-                            <h3 className="display-6 fw-bold mb-0">${totalRevenue.toLocaleString()}</h3>
+                            <h3 className="display-6 fw-bold mb-0">₹{totalRevenue.toLocaleString()}</h3>
                         </div>
                     </div>
                 </div>
@@ -313,7 +313,7 @@ const Dashboard = () => {
                                     <tr key={order.id}>
                                         <td className="ps-4 fw-bold">#{order.id.slice(-6)}</td>
                                         <td>{order.selectedAddress.fullname}</td>
-                                        <td>${order.subtotal}</td>
+                                        <td>₹{order.subtotal}</td>
                                         <td>
                                             <span className={`badge rounded-pill px-3 py-2 ${order.status === 'pending' ? 'bg-warning text-dark' :
                                                 order.status === 'dispatched' ? 'bg-info text-dark' :

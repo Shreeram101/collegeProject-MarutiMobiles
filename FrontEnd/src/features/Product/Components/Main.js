@@ -208,7 +208,7 @@ const Main = () => {
                                                 </div>
 
                                                 <div className="mt-auto d-flex justify-content-between align-items-center">
-                                                    <h4 className='mb-0 fw-bold text-primary'>${Product.price}</h4>
+                                                    <h4 className='mb-0 fw-bold text-primary'>₹{Product.price}</h4>
                                                     <button className='btn btn-light rounded-circle text-primary shadow-sm hover-primary'>
                                                         <i className="fa-solid fa-arrow-right"></i>
                                                     </button>

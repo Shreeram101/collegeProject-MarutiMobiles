@@ -66,7 +66,7 @@ const Wishlist = () => {
                       {item?.product?.title || 'Unknown Product'}
                     </h5>
                     <p className="card-text text-primary fs-5 fw-bold mb-3">
-                      ${item?.product?.price || '0'}
+                      ₹{item?.product?.price || '0'}
                     </p>
 
                     <div className="mt-auto">

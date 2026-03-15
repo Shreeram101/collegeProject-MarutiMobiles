@@ -39,7 +39,7 @@ const UserOrders = () => {
                                 </div>
                                 <div className="text-end">
                                     <span className="text-secondary small text-uppercase fw-bold d-block">Total Amount</span>
-                                    <span className="fw-bold fs-5 text-primary">${order.subtotal}</span>
+                                    <span className="fw-bold fs-5 text-primary">₹{order.subtotal}</span>
                                 </div>
                             </div>
 
@@ -70,7 +70,7 @@ const UserOrders = () => {
                                                     </div>
                                                     <div className="text-end">
                                                         <small className="text-secondary d-block">Price</small>
-                                                        <span className="fw-bold text-dark">${item.product.price}</span>
+                                                        <span className="fw-bold text-dark">₹{item.product.price}</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -105,7 +105,7 @@ const UserOrders = () => {
                                             <hr className="my-2" />
                                             <div className="d-flex justify-content-between">
                                                 <span className="fw-bold text-dark">Grand Total</span>
-                                                <span className="fw-bold text-primary fs-5">${order.subtotal}</span>
+                                                <span className="fw-bold text-primary fs-5">₹{order.subtotal}</span>
                                             </div>
                                         </div>
                                     </div>

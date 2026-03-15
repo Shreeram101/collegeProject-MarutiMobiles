@@ -65,7 +65,7 @@ const AdminProductList = () => {
                                             </div>
                                         </td>
                                         <td><span className="badge bg-light text-secondary border">{product.category}</span></td>
-                                        <td className="fw-bold text-primary">${product.price}</td>
+                                        <td className="fw-bold text-primary">₹{product.price}</td>
                                         <td>
                                             {product.stock > 0 ? (
                                                 <span className="text-success fw-bold"><i className="fa-solid fa-check me-1"></i>{product.stock} in stock</span>
